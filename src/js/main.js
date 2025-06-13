@@ -22,9 +22,9 @@ function chuva_efffect() {
                 break;
         }
 
-        let anim_duration = irandom(5, 6)
+        let anim_duration = irandom(4, 5)
 
-        element.style.top = '-100px'
+        element.style.top = '-50px'
         element.style.left = `${irandom(0, (USER_WIDTH - 50))}px`
         element.style.animationDuration = `${anim_duration}s`
         element.classList.add('cair')
