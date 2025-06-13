@@ -16,7 +16,7 @@ function chuva_efffect() {
                 element.textContent = emoji[irandom(0, emoji.length - 1)]
                 break;
             default:
-                element.src = `../src/img/chuva/${irandom(1, 7)}.jpg`
+                element.src = `./src/img/chuva/${irandom(1, 7)}.jpg`
                 element.style.width = '40px'
                 element.style.height = '40px'
                 break;
@@ -45,11 +45,6 @@ function estrelas() {
     let StarPositions = []
 
     function get_position(size, e) {
-
-        /*
-            Função faz que as estrelas não ocupe o mesmo lugar, 
-            tendo uma margem de 2x o tamanho da estrela.
-        */
 
         let X = irandom(size, USER_WIDTH - size);
         let Y = irandom(size, USER_HEIGHT - size);
