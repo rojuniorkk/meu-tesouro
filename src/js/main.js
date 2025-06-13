@@ -33,7 +33,7 @@ function chuva_efffect() {
 
         setTimeout(() => {
             element.remove()
-        }, (1000 * (anim_duration + 5)))
+        }, (1000 * (anim_duration + 3)))
     }
 }
 
