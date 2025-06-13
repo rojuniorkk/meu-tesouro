@@ -177,4 +177,4 @@ estrelas();
 
 setInterval(() => {
     chuva_efffect()
-}, 100)
+}, 50)
