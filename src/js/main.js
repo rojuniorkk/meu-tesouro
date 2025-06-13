@@ -131,7 +131,7 @@ bau.addEventListener('click', () => {
     let active = bau.getAttribute('active')
 
     if (active == 0) {
-        playSound('../src/audio/chest.mp3')
+        playSound('./src/audio/chest.mp3')
 
         bau.setAttribute('active', 1)
         bau.classList.add('bau-click-anim')
