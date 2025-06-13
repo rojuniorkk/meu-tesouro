@@ -118,7 +118,6 @@ bau.onanimationend = (a) => {
 }
 
 book.onanimationend = (a) => {
-    console.log(a)
     if (a.animationName == 'scale-off') {
         book.classList.remove('book-open-anim')
         book.classList.add('float-anim')
@@ -131,7 +130,7 @@ bau.addEventListener('click', () => {
     let active = bau.getAttribute('active')
 
     if (active == 0) {
-        playSound('./src/audio/music.mp3', true)
+        playSound('./src/audio/chest.mp3', true)
 
         bau.setAttribute('active', 1)
         bau.classList.add('bau-click-anim')
