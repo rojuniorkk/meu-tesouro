@@ -1,0 +1,181 @@
+.start-anim {
+    animation-name: star;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.pulse-scale-anim {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.float-anim{
+    animation-name: float;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.fade-anim{
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}
+
+/* Mapa Fechando */
+
+.mapa-fechar-anim {
+    animation-name: scale-off;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* ############## */
+
+/* Book */
+
+.book-open-anim {
+    animation-name: scale-off;
+    animation-duration: .65s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+/* ############## */
+
+/* Bau Aparecendo */
+
+.bau-subir-anim {
+    /* display: block !important; */
+    animation: bau-subir 1s ease-out forwards;
+}
+
+.bau-ativar-anim{
+    animation: bau-ativar .15s forwards;
+}
+
+.bau-desativar-anim{
+    animation: bau-subir reverse 1s forwards;
+    animation-delay: .05s;
+}
+
+.bau-click-anim{
+    animation: bau-click .35s forwards;
+}
+
+
+@keyframes bau-ativar {
+    0% {
+        opacity: .5;
+        transform: scale(.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bau-click {
+    0% {
+        /* opacity: .5; */
+        transform: scale(.5);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes bau-subir {
+    from {
+        scale: 0;
+        transform: translateY(5000px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ############## */
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale-off {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1);
+    };
+
+    from {
+        transform: scale(1.2);
+    };
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+
+    ;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(2000px);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
