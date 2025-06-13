@@ -7,7 +7,7 @@ const emoji = ['❤️', '🩷', '🤍', '💞', '💓', '❤️‍🔥']
 function chuva_efffect() {
 
     if (chuva.style.display == 'block') {
-        const element = document.createElement(Math.random() < .85 ? 'div' : 'img');
+        const element = document.createElement(Math.random() < .7 ? 'div' : 'img');
 
         element.classList.add('chuva-element')
 
